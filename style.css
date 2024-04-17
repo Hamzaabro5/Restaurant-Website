@@ -74,6 +74,15 @@ nav{
 .fresh-icon{
     margin: 0px 80px;
 }
+.list{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+.list:hover{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.2   );
+}
 .gallery-section h2{
     text-align: center;
     color: white;
@@ -88,7 +97,45 @@ nav{
     font-size: 46px;
     font-weight: 500;
 }
-
+.grid-img{
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+.grid-img:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+.Menu{
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    grid-template-areas: 
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+    margin-top: 20px;
+}
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.item6{
+    grid-area: I6;
+}
+.item7{
+    grid-area: I7;
+}
 footer{
     background-color: #e4baba52;
     display: flex;
